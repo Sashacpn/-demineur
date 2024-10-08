@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Démineur</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div id="menu">
+        <div id="logo">
+            <img src="logo.png">
+        </div>
+        <div id="titre">
+            StrangMineur
+        </div>
+        <div id="level1" class="bouton">Niveau facile</div>
+        <div id="level2" class="bouton">Niveau moyen</div>
+        <div id="level3" class="bouton">Niveau difficile</div>
+
+    </div>
+    <div id="jeu">
+        <div id="regles">
+            <b><br>Regles du jeu<br></b>
+
+
+            <br>Decouvrez le jeu classique du demineur revisite pour les passionnes et les debutants.
+            Le but ? Trouver toutes les cases sans mines en evitant les pieges mortels.
+            Clic gauche : Devoilez une case. Simple, mais faites attention !
+            Clic droit : Placez un drapeau pour indiquer une case suspecte.<br>
+
+            <br>Les Chiffres : Le jeu du demineur vous offre des indices. Chaque case numerotee vous indique combien de
+            mines se cachent a proximite (en haut, en bas, a gauche, a droite, et en diagonale).
+            Utilisez ces indices pour naviguer habilement sur le terrain mine.
+            Par exemple, si une case indique "1" et qu'une seule case avoisinante reste cachee, vous pouvez etre sur
+            qu'une mine s'y trouve !<br>
+
+            <br>Vous avez clique sur une mine ? Game Over. Tentez votre chance a nouveau et améliorez vos competences au
+            demineur.<br>
+
+            <br>Le compteur en haut a gauche indique le nombre de mines qu'il reste a trouver.
+            Le compteur en haut a droite est un chronometre. Votre but est aussi de terminer la partie de demineur le
+            plus rapidement possible !<br>
+
+            <br>Il y a 3 niveaux de difficulte classiques : Debutant, Intermediaire, et Expert, le plus difficile.
+            En bonus, d'autres niveaux sont disponibles sur la page Plus, et peuvent être debloques en terminant les
+            niveaux precedents.<br>
+        </div>
+
+        <table id="grille">
+
+
+        </table>
+
+        <div id="nbbombes">
+            Nombre de bombes restantes : <span>0</span>
+        </div>
+
+
+        <div id="chrono">
+            Temps ecoule : <span>0</span>
+
+        </div>
+
+        <div id="message"></div>
+
+
+
+    </div>
+</body>
+<script src="demineur.js"></script>
+
+</html>
